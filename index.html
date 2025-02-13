@@ -11,11 +11,11 @@
 
 
   <div id="adviceBox">
-    <h3>Advice #<span id="adviceCount"></span></h3>
+    <h3>Advice #<span id="adviceCount">1</span></h3>
       <span id="advice"></span>
       <img src="./images/pattern-divider-mobile.svg" id="divider">
       <button id="refresh">
-          <img src="./images/icon-dice.svg" id="dice">
+          <img src="./images/icon-dice.svg" onclick="addCount()" id="dice">
       </button>
   </div>
   
@@ -29,18 +29,24 @@
 
   <script>
     const refreshBtn = document.getElementById('refresh');
-    let count = 0;
-    refreshBtn.addEventListener('click', () =>{
-      count += 1;
+    let count = 1;
+    const fetchApi = () =>{
       fetch('https://api.adviceslip.com/advice').then(Response => Response.json()).then(data =>{
           document.getElementById('advice').innerHTML = data.slip.advice;
-          document.getElementById('adviceCount').textContent = count;
       }).catch(error => {
         document.getElementById('advice').innerHTML = 'Advice failed to load, check your internet connection and try again!'
         console.log("Error Fetching Advice", error)
       })
-    })
+    }
+    refreshBtn.addEventListener('click', fetchApi
+      // count += 1;
+    )
+    function addCount(){
+        count += 1;
+        document.getElementById('adviceCount').textContent = count;
+    }
     
+     fetchApi()
    
   </script>
 </body>
