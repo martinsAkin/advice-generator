@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+:root{
+  --mainbgcolor: hsl(218, 23%, 16%);
+  --textColor: hsl(215, 58%, 84%);
+  --adviceBoxColor: hsl(217, 19%, 24%);
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Manrope", serif;
+}
+ body{
+  background-color: var(--mainbgcolor);
+  height: 100dvh;
+  width: 100dvw;
+  overflow: hidden;
+ }
+ #refresh:hover{
+  cursor: pointer
+ }
+@media (min-width: 320px) and (max-width: 767px) {
+ #adviceBox{
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--adviceBoxColor);
+  color: var(--textColor);
+  margin: 0 auto;
+  margin-top: 40%;
+  width: 85%;
+  box-shadow: 2px 2px 5px hsl(217, 19%, 24%);
+  position: relative;
+ }
+ #adviceBox h3{
+  /* margin: 0 auto; */
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+ }
+ #advice{
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+ }
+ #divider{
+  margin-bottom: 2rem;
+  width: 100%;
+ }
+ #refresh{
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 3.5rem;
+  left: 43%;
+  right: 43%;
+
+ }
+}
+
+@media (min-width: 767px) and (max-width: 1023px){
+ #adviceBox{
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--adviceBoxColor);
+  color: var(--textColor);
+  margin: 0 auto;
+  margin-top: 40%;
+  width: 85%;
+  box-shadow: 2px 2px 5px hsl(217, 19%, 24%);
+  position: relative;
+ }
+ #adviceBox h3{
+  font-size: xx-large;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+ }
+ #advice{
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 30px;
+ }
+ #divider{
+  margin-bottom: 2rem;
+  width: 100%;
+ }
+ #refresh{
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 45%;
+  right: 45%;
+
+ }
+ #dice{
+  height: 2rem;
+ }
+}
+
+@media (min-width: 1024px) {
+ #adviceBox{
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--adviceBoxColor);
+  color: var(--textColor);
+  margin: 0 auto;
+  margin-top: 15%;
+  width: 80%;
+  box-shadow: 2px 2px 5px hsl(217, 19%, 24%);
+  position: relative;
+ }
+ #adviceBox h3{
+  font-size: xx-large;
+  text-align: center;
+  color: hsl(150, 100%, 66%);
+ }
+ #advice{
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 35px;
+ }
+ #divider{
+  margin-bottom: 2rem;
+  width: 100%;
+ }
+ #refresh{
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  left: 47%;
+  right: 47%;
+
+ }
+ #dice{
+  height: 3rem;
+ }
+}

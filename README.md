@@ -1,0 +1,1 @@
+This Web App makes use of Advice Slip Api to fetch a randomized piece of advice every time the button is clicked on the web page. This Challenge was Inspired by FrontendMentors.io
